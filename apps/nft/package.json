@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "",
     "dev:nft": "",
-    "build": "next build",
+    "build": "npm run build:locales && next build",
     "build:locales": "i18nexus pull -p ./src/i18n",
     "test": "echo 'Running nft tests'",
     "start": "next start",
