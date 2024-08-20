@@ -98,6 +98,7 @@ function useAllowanceCheck(
                     selection.decimals
                   ).toString();
                   // only trigger an update if we got a new allowance for selected token
+                  console.log("get Allowance:", newAllowance);
                   return newAllowance;
                 })) ||
             "0"

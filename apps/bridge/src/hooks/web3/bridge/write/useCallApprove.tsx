@@ -41,6 +41,7 @@ export function useCallApprove(selected: Token) {
       }).catch((e) => {
         throw e;
       });
+      console.log(`txRes = ${txRes?.hash}`);
       // mark approval...
       setApprovalStatus("Tx approved, waiting for confirmation...");
       // wait for one confirmation
